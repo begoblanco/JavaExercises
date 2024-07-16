@@ -1,6 +1,6 @@
 package dev.bego.Exercise1;
 
-public class Days {
+public class Day {
 
     private int[] daysList = {
             31, 28, 31, 30, 31, 30,

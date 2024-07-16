@@ -10,8 +10,8 @@ public class App1 {
         System.out.print("Enter a valid month number: "); 
         int month = scanner.nextInt();
 
-        MonthDays monthDays = new MonthDays(); 
-        Days days = new Days();       
+        Month monthDays = new Month(); 
+        Day days = new Day();       
     
         String monthName = monthDays.monthName(month);
         int daysInMonth = days.numberOfDays(month);

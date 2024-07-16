@@ -1,6 +1,6 @@
 package dev.bego.Exercise1;
 
-public class MonthDays {
+public class Month {
 
     private String[] monthList = { "January", "February", "March",
             "April", "May", "June", "July", "August",
