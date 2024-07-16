@@ -1,8 +1,8 @@
-package dev.bego.Exercise1Tests;
+package dev.bego.daysofthemonthtest;
 
 import org.junit.jupiter.api.Test;
 
-import dev.bego.Exercise1.Day;
+import dev.bego.daysofthemonth.Day;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

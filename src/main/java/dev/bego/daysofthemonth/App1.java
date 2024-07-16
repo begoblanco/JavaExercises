@@ -1,4 +1,4 @@
-package dev.bego.Exercise1;
+package dev.bego.daysofthemonth;
 
 import java.util.Scanner;
 
