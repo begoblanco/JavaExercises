@@ -10,14 +10,15 @@ public class App1 {
         System.out.print("Enter a valid month number: "); 
         int month = scanner.nextInt();
 
-        MonthDays monthDays = new MonthDays();        
+        MonthDays monthDays = new MonthDays(); 
+        Days days = new Days();       
     
         String monthName = monthDays.monthName(month);
-        int days = monthDays.numberOfDays(month);
+        int daysInMonth = days.numberOfDays(month);
 
         System.out.println("Month " +  monthName);
         System.out.println();      
-        System.out.println("Days: " + days);
+        System.out.println("Days: " + daysInMonth);
 
         scanner.close();
     }
