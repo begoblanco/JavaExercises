@@ -1,4 +1,4 @@
-package dev.bego.daysofthemonth;
+package dev.bego.days_of_the_month;
 
 public class Day {
 
