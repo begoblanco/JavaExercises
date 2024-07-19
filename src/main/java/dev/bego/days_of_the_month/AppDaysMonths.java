@@ -2,7 +2,7 @@ package dev.bego.days_of_the_month;
 
 import java.util.Scanner;
 
-public class App1 {
+public class AppDaysMonths {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

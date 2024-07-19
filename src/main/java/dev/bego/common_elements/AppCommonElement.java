@@ -3,7 +3,7 @@ package dev.bego.common_elements;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class App2 {
+public class AppCommonElement {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

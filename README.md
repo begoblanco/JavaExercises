@@ -3,17 +3,17 @@
 ## Exercise 1 : Month Days
 Hacer un programa que, dado el número de un mes (1,2,3,4…12), presente el nombre del mes y determine la cantidad de días que tiene.
 
-<img src = "./src/media/javaexercises.drawio.png"> 
+<img src = "./src/assets/javaexercises.drawio.png"> 
 
 ## Exercise 2 : Common Elements
 Desarrollar un programa que busque elementos comunes en dos arrays de enteros.
 
-<img src = "./src/media/ex2.drawio.png"> 
+<img src = "./src/assets/ex2.drawio.png"> 
 
 ## Exercise 3 : Armstrong
 Se quiere desarrollar un programa que determine si un número es un número de Armstrong. Un número de Armstrong es aquel que es igual a la suma de sus dígitos elevados a la potencia de su número de cifras.
 
-<img src = "./src/media/ex3.drawio.png"> 
+<img src = "./src/assets/ex3.drawio.png"> 
 
 ## Exercise 4 : Vehicle
 Se requiere un programa que modele el concepto de un automóvil. Un automóvil tiene los siguientes atributos:

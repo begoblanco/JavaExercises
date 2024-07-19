@@ -2,7 +2,7 @@ package dev.bego.armstrong;
 
 import java.util.Scanner;
 
-public class App3 {
+public class AppArmstrong {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
