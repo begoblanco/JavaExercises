@@ -17,8 +17,12 @@ public class Vehicle {
     private int maxSpeed;
     private int currentSpeed;
 
+    // Alto Policia
+    private boolean isAutomatic;
+    private int fines;
+
     public Vehicle(String brand, int model, double engine, FuelType fuelType, CarType carType, int doorNumber,
-            int seatNumber, Color color, int maxSpeed, int currentSpeed) {
+            int seatNumber, Color color, int maxSpeed, int currentSpeed, boolean isAutomatic) {
         this.brand = brand;
         this.model = model;
         this.engine = engine;
@@ -29,8 +33,10 @@ public class Vehicle {
         this.color = color;
         this.maxSpeed = maxSpeed;
         this.currentSpeed = currentSpeed;
+        this.isAutomatic = isAutomatic;
     }
 
+    // Getters and Setters
     public String getBrand() {
         return brand;
     }
@@ -111,17 +117,29 @@ public class Vehicle {
         this.currentSpeed = currentSpeed;
     }
 
+    // Alto policia
+    public boolean isAutomatic() {
+        return isAutomatic;
+    }
+
+    public void setAutomatic(boolean isAutomatic) {
+        this.isAutomatic = isAutomatic;
+    }
+
+    // Methods
+
     public void accelerate(int speedIncrement) {
         if ((currentSpeed + speedIncrement) <= maxSpeed) {
             currentSpeed += speedIncrement;
         } else {
             System.out.println("Your speed exceeds the max speed for this vehicle");
             currentSpeed = maxSpeed; // establecemos la current speed como la max speed ya que se pasa
+            fines ++; //Alto policia
         }
 
     }
 
-    public void decelerate(int speedDecrement) {
+        public void decelerate(int speedDecrement) {
         if ((currentSpeed - speedDecrement) >= 0) {
             currentSpeed -= speedDecrement;
         } else {
@@ -139,17 +157,29 @@ public class Vehicle {
     public double estimatedTimeOfArrival(double distance) {
         if (currentSpeed > 0) {
             return distance / currentSpeed;
-        }else{
+        } else {
             return 0;
         }
 
     }
 
-    public void display(){
+    public boolean hasFines() { //Alto Policia
+        if (fines > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int totalFines(){
+        return fines;
+    }
+
+    public void display() {
         System.out.println("Vehicle Attributes:");
         System.out.println("Brand: " + brand);
         System.out.println("Model: " + model);
-        System.out.println("Engine: " + engine + " liters");
+        System.out.println("Engine: " + engine + " L");
         System.out.println("Fuel Type: " + fuelType);
         System.out.println("Car Type: " + carType);
         System.out.println("Number of Doors: " + doorNumber);
@@ -157,6 +187,7 @@ public class Vehicle {
         System.out.println("Color: " + color);
         System.out.println("Max Speed: " + maxSpeed + " km/h");
         System.out.println("Current Speed: " + currentSpeed + " km/h");
+        System.out.println("Automatic: " + isAutomatic);
     }
 
 }

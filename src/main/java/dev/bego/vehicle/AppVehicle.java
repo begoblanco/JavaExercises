@@ -8,7 +8,8 @@ public class AppVehicle {
 
     public static void main(String[] args) {
 
-        Vehicle vehicle = new Vehicle("Ferrari", 1997, 2.5, FuelType.DIESEL, CarType.CITY_CAR, 2, 4, Color.RED, 250, 0);
+        Vehicle vehicle = new Vehicle("Ferrari", 1997, 2.5, FuelType.DIESEL, CarType.CITY_CAR, 2, 4, Color.RED, 250, 0,
+                false);
 
         vehicle.display();
 
@@ -23,6 +24,9 @@ public class AppVehicle {
 
         vehicle.brake();
         System.out.println("You have now stopped, your speed is: " + vehicle.getCurrentSpeed() + " km/h");
+
+        // Alto policia
+        System.out.println("Any fines?: " + vehicle.hasFines());
+        System.out.println("Total fines: " + vehicle.totalFines());
     }
-    
 }
