@@ -111,6 +111,52 @@ public class Vehicle {
         this.currentSpeed = currentSpeed;
     }
 
-    
+    public void accelerate(int speedIncrement) {
+        if ((currentSpeed + speedIncrement) <= maxSpeed) {
+            currentSpeed += speedIncrement;
+        } else {
+            System.out.println("Your speed exceeds the max speed for this vehicle");
+            currentSpeed = maxSpeed; // establecemos la current speed como la max speed ya que se pasa
+        }
+
+    }
+
+    public void decelerate(int speedDecrement) {
+        if ((currentSpeed - speedDecrement) >= 0) {
+            currentSpeed -= speedDecrement;
+        } else {
+            System.out.println("Your speed can't be below 0 km/h");
+            currentSpeed = 0; // establecemos la current speed como 0 ya que si no seria negativa
+        }
+
+    }
+
+    public void brake() {
+        currentSpeed = 0;
+
+    }
+
+    public double estimatedTimeOfArrival(double distance) {
+        if (currentSpeed > 0) {
+            return distance / currentSpeed;
+        }else{
+            return 0;
+        }
+
+    }
+
+    public void display(){
+        System.out.println("Vehicle Attributes:");
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+        System.out.println("Engine: " + engine + " liters");
+        System.out.println("Fuel Type: " + fuelType);
+        System.out.println("Car Type: " + carType);
+        System.out.println("Number of Doors: " + doorNumber);
+        System.out.println("Number of Seats: " + seatNumber);
+        System.out.println("Color: " + color);
+        System.out.println("Max Speed: " + maxSpeed + " km/h");
+        System.out.println("Current Speed: " + currentSpeed + " km/h");
+    }
 
 }
