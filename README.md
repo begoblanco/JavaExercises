@@ -74,4 +74,4 @@ Modificar el método acelerar para que si la velocidad máxima se sobrepase se g
 Agregar un método para determinar si un vehículo tiene multas y otro método para determinar el valor total de multas de un vehículo.
 
 
-<img src = "./src/media/ex4.drawio.png"> 
+<img src = "./src/assets/ex4.drawio.png"> 
